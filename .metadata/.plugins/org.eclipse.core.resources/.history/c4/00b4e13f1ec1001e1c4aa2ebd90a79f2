@@ -1,0 +1,13 @@
+package com.vamsi;
+
+public class MainTest {
+
+	public static void main(String[] args) {
+		
+		Employee emp=new Employee(101,"vamsi",40000.45);
+		Employee emp1=new Employee(102,"Arya",45000.00);
+		System.out.println(emp);
+		System.out.println(emp1);
+		}
+
+}

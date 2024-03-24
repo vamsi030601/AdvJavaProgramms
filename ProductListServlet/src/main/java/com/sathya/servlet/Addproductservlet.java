@@ -1,0 +1,64 @@
+package com.sathya.servlet;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.PrintWriter;
+import java.sql.Date;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Part;
+
+
+@WebServlet("/Addproductservlet")
+public class Addproductservlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+   
+    public Addproductservlet() {
+        
+    }
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String proId=request.getParameter("proId");
+		String proName=request.getParameter("proName");
+		
+		double proPrice=Double.parseDouble(request.getParameter("proPrice"));
+		String proBrand=request.getParameter("proBrand");
+		
+		String proMadeIN=request.getParameter("proMadeIN");
+		
+		Date proMfgDate=Date.valueOf(request.getParameter("proMfgDate"));
+		Date proExpDate=Date.valueOf(request.getParameter("proExpDate"));
+		
+		Part part=request.getPart("proImage");
+		InputStream proImage=part.getInputStream();
+		
+		
+	    Product product=new Product();
+	    product.setProId(proId);
+	    product.setProName(proName);
+	    product.setProPrice(proPrice);
+	    product.setProBrand(proBrand);
+	    product.setProMadeIN(proMadeIN);
+	    product.setProMfgDate(proMfgDate);
+	    product.setProExpDate(proExpDate);
+	    product.setProImage(proImage);
+	    
+	    
+	    ProductDao productDao=new ProductDao();
+	    int result=productDao.save(product);
+	    
+		response.setContentType("text/html");
+		PrintWriter writer=response.getWriter();
+		writer.println("Data inserted successfully"+result);
+		
+		
+	}
+
+}

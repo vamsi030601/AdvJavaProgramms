@@ -1,0 +1,11 @@
+package com.vamsi;
+
+public class MainTest {
+
+	public static void main(String[] args) {
+		
+		Employee emp=new Employee(101,"vamsi",40000.45);
+		System.out.println(emp);
+		}
+
+}

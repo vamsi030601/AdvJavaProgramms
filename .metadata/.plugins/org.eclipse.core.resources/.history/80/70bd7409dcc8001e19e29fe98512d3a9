@@ -1,0 +1,25 @@
+<html>
+<head>
+   <title>Registration application</title>
+</head>
+   <body bgcolor="pink">
+       <h1> Registration form..</h1>
+       <form method="get" action="./RegisterServlet">
+       
+       <label>username</label>
+           <input type="text" name="username"
+           placeholder="enter user name" required/>
+          <br><br>
+        
+         <label>password</label> 
+            <input type="password" name="password" 
+                 placeholder="enter password" required/>
+               <br><br>
+               
+          
+          
+          </form>
+          
+          
+          
+        

@@ -1,0 +1,29 @@
+<html>
+   <head>
+    <title> Product Bill App </title>
+   </head>
+   <body bgcolor ="red">
+     <h1> Product Bill App </h1>
+     <form method="get" action="./ProductServlet">
+       <label> productId </label>
+        <input  type="number" name="proId"
+        placeholder="enter the pro Id" required/>
+        <br><br>
+        
+        <label> product name </label>
+        <input type="text" name="proName"
+        placeholder="enter the pro Name" required/>
+        <br><br>
+        
+        <label> product price </label>
+        <input type="number" name="proPrice"
+        placeholder="enter the pro Price" required/>
+        <br><br>
+          <label> product quantity </label>   
+           <input type="number" name="proQuantity"
+                placeholder="enter the pro Quantity" min="2" max="10"required/>
+                <br><br>
+          <input type="submit" value="product Invoice"/>
+        </form>
+        </body>
+        </html>

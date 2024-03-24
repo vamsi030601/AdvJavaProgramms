@@ -1,0 +1,84 @@
+<html>
+<head>
+   <title>Registration application</title>
+</head>
+   <body bgcolor="pink">
+       <h1> Registration form..</h1>
+       <form method="get" action="/RegisterServlet">
+       
+       <label>username</label>
+           <input type="text" name="username" required/>
+           
+          <br><br>
+        
+         <label>password</label> 
+            <input type="password" name="password" required/>
+          
+               <br><br>
+               
+           <label>user mobile</label> 
+              <input type="number" name="mobile" 
+                 placeholder="enter mobilenumber" required/>
+               <br><br>
+               
+            <label>email</label> 
+                 <input type="email" name="email" 
+                 placeholder="enter email" required/>
+               <br><br>
+              <label> gender :</label> 
+                <input type="radio" name="gender" value="male"/>male 
+                <input type="radio" name="gender" value="female"/>female
+               <br><br>
+               
+             <label> select DOB :</label> 
+                 <input type="date" name="dob" required/> 
+                   <br><br>
+                   
+             <label> select Qualification :</label> 
+                <input type="checkbox" name="qualification" value="BSC"/>BSC
+                <input type="checkbox" name="qualification" value="BE"/>BE
+                <input type="checkbox" name="qualification" value="BTECH"/>BTECH
+                <input type="checkbox" name="qualification" value="MTECH"/>MTECH            
+                <br><br> 
+                
+             <label> country:</label> 
+                  <select name="country"> 
+                   <option> India </option>
+                   <option> China </option>
+                    <option> America</option>
+                     <option> UK </option>
+                  </select>
+                    <br><br>
+             
+             <label> select language:</label>
+               <select name="language" size="3" multiple>
+               <option> TELUGU </option>
+               <option> HINDI </option>
+               <option> ENGLISH </option>                   
+               <option> KANNADA </option>
+               <option> TAMIL </option>
+                </select>
+                  <br><br>
+                  
+             <label> comments about  sir classes</label>
+             <testarea name="comments" rows="5" cols="25" >
+         
+              </testarea> 
+               <br><br>
+               
+               <input type="submit" value="Register"/> 
+           </form>       
+         </body> 
+        </html>       
+                 
+                   
+                    
+                
+                
+                
+                 
+          
+          
+          
+          
+        

@@ -1,0 +1,14 @@
+127.0.0.1 - - [12/Feb/2024:20:31:06 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:31:06 +0530] "GET /RegistrationApp/ HTTP/1.1" 404 771
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:31:06 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:31:22 +0530] "GET /RegistrationApp/register.html HTTP/1.1" 200 2921
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:32:33 +0530] "GET /RegisterServlet?username=vamsi&password=vamsi%40123&mobile=9014392677&email=vamsisanamandra0%40gmail.com&gender=male&dob=2001-06-25&qualification=BTECH&country=India&language=TELUGU HTTP/1.1" 404 766
+127.0.0.1 - - [12/Feb/2024:20:35:04 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:35:04 +0530] "GET /RegistrationApp/ HTTP/1.1" 404 771
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:35:20 +0530] "GET /RegistrationApp/register.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:36:14 +0530] "GET /RegisterServlet?username=vamsi&password=vamsi123&mobile=9014392677&email=vamsisanamandra0%40gmail.com&gender=male&dob=2001-06-25&qualification=BTECH&country=India&language=TELUGU HTTP/1.1" 404 766
+127.0.0.1 - - [12/Feb/2024:20:41:14 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:41:15 +0530] "GET /RegistrationApp/ HTTP/1.1" 404 771
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:41:26 +0530] "GET /RegistrationApp/product.html HTTP/1.1" 404 783
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:41:44 +0530] "GET /RegistrationApp/register.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:42:27 +0530] "GET /RegisterServlet?username=vamsi&password=vamsi%40123&mobile=9014392677&email=vamsisanamandra0%40gmail.com&gender=male&dob=2001-06-25&qualification=BTECH&country=India&language=TELUGU HTTP/1.1" 404 766
